@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('image/sunset-bg.jpg') center/cover no-repeat;
+    overflow: hidden;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    border-radius: 16px;
+    text-align: center;
+    transition: height .7s ease;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0 48px 0 42px;
+    height: 55px;
+    font-size: 22px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.weather-box img {
+    width: 60%;
+}
+
+/* .weather-details {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.not-found img{
+    height: 250px;
+    width: 250px;
+}
+.weather-d{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Initially hide weather box, details, and the not-found message */
+.weather-box,
+.weather-details,
+.not-found {
+    display: none;
+}
+
+/* Show these when the active class is added */
+.weather-box.active,
+.weather-details.active {
+    display: block;
+}
+
+/* Show the not-found message only when it's active */
+.not-found.active {
+    display: block;
+}
+
