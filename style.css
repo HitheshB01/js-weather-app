@@ -10,12 +10,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('image/sunset-bg.jpg') center/cover no-repeat;
+    background: url('image/darling-8346954_1920.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
 .container {
-    width: 400px;
+    width: 600px;
     padding: 20px;
     color: #fff;
     background: rgba(255, 255, 255, .1);
